@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | LakensUniverse</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=640 height=400 style="width: 640px; height: 400px; background: #231F20"></canvas>
+    <script src="Build/75276580b1d2b7eca4caabffbdbeffc8.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/08e5918bbe1d7b48add122df8d6493b3.data",
+        frameworkUrl: "Build/8669aeb10ef873041877cf89c9ed3be7.js",
+        codeUrl: "Build/17692bc773c80e0a15352310e2932fb1.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "LakensUniverse",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
